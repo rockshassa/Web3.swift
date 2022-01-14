@@ -8,10 +8,10 @@
 
 import Foundation
 
-extension UInt8: BytesConvertible {}
-extension UInt16: BytesConvertible {}
-extension UInt32: BytesConvertible {}
-extension UInt64: BytesConvertible {}
+extension UInt8: Web3BytesConvertible {}
+extension UInt16: Web3BytesConvertible {}
+extension UInt32: Web3BytesConvertible {}
+extension UInt64: Web3BytesConvertible {}
 
 extension UnsignedInteger {
 

@@ -8,7 +8,7 @@
 
 import Quick
 import Nimble
-@testable import Web3
+@testable import MagicSDK_Web3
 import BigInt
 
 class EthereumPrivateKeyTests: QuickSpec {

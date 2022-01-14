@@ -297,7 +297,7 @@ extension EthereumPrivateKey: Equatable {
 
 // MARK: - BytesConvertible
 
-extension EthereumPrivateKey: BytesConvertible {
+extension EthereumPrivateKey: Web3BytesConvertible {
 
     public func makeBytes() -> Bytes {
         return rawPrivateKey

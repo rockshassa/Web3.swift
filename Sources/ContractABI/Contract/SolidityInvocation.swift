@@ -6,10 +6,7 @@
 //
 
 import Foundation
-#if !Web3CocoaPods
-    import Web3
-#endif
-
+import MagicSDK_Web3
 public enum InvocationError: Error {
     case contractNotDeployed
     case invalidConfiguration

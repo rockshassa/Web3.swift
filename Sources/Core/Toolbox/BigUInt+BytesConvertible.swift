@@ -9,7 +9,7 @@
 import Foundation
 import BigInt
 
-extension BigUInt: BytesConvertible {
+extension BigUInt: Web3BytesConvertible {
 
     public func makeBytes() -> Bytes {
         var bytes: [UInt8] = []

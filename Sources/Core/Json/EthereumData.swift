@@ -8,7 +8,7 @@
 
 import Foundation
 
-public struct EthereumData: BytesConvertible {
+public struct EthereumData: Web3BytesConvertible {
 
     public let bytes: Bytes
 
