@@ -11,7 +11,7 @@ let package = Package(
     products: [
         .library(
             name: "MagicSDK_Web3",
-            targets: ["Web3"]),
+            targets: ["MagicSDK_Web3"]),
         .library(
             name: "Web3PromiseKit",
             targets: ["Web3PromiseKit"]),
@@ -62,7 +62,7 @@ let package = Package(
         .testTarget(
             name: "Web3Tests",
             dependencies: [
-                .target(name: "Web3"),
+                .target(name: "MagicSDK_Web3"),
                 .target(name: "Web3PromiseKit"),
                 .target(name: "Web3ContractABI"),
                 .product(name: "Quick", package: "Quick"),
