@@ -9,10 +9,7 @@
 #if canImport(PromiseKit)
 
 import PromiseKit
-
-#if !Web3CocoaPods
-    import Web3
-#endif
+import MagicSDK_Web3
 
 // MARK: - Extensions
 
