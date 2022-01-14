@@ -69,7 +69,7 @@ extension EthereumLogObject: Hashable {
         if let removed = self.removed {
             removedBytes = removed ? UInt8(0x01) : UInt8(0x00)
         }
-        var arr: [BytesRepresentable?] = [
+        var arr: [Web3BytesRepresentable?] = [
             removedBytes, logIndex, transactionIndex, transactionHash, blockHash, blockNumber,
             address, data
         ]

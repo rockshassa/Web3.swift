@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension String: BytesConvertible {
+extension String: Web3BytesConvertible {
 
     /**
      * UTF8 Byte Array representation of self

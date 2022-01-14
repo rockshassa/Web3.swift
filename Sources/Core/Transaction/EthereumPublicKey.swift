@@ -349,7 +349,7 @@ extension EthereumPublicKey: Equatable {
 
 // MARK: - BytesConvertible
 
-extension EthereumPublicKey: BytesConvertible {
+extension EthereumPublicKey: Web3BytesConvertible {
 
     public func makeBytes() -> Bytes {
         return rawPublicKey

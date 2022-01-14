@@ -17,24 +17,24 @@ public typealias Bytes = [Byte]
 /**
  * Implementable if the type can be converted to Bytes
  */
-public protocol BytesRepresentable {
+public protocol Web3BytesRepresentable {
     func makeBytes() throws -> Bytes
 }
 
 /**
  * Implementable if the type can be represented with Bytes
  */
-public protocol BytesInitializable {
+public protocol Web3BytesInitializable {
     init(_ bytes: Bytes) throws
 }
 
 /**
  * Implementable if a type is BytesRepresentable and BytesInitializable
  */
-public typealias BytesConvertible = BytesRepresentable & BytesInitializable
+public typealias Web3BytesConvertible = Web3BytesRepresentable & Web3BytesInitializable
 
-public extension BytesInitializable {
-    init(_ bytes: BytesRepresentable) throws {
+public extension Web3BytesInitializable {
+    init(_ bytes: Web3BytesRepresentable) throws {
         let bytes = try bytes.makeBytes()
         try self.init(bytes)
     }

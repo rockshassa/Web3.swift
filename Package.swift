@@ -3,14 +3,14 @@
 import PackageDescription
 
 let package = Package(
-    name: "Web3",
+    name: "MagicSDK-Web3",
     platforms: [
        .iOS(.v10),
        .macOS(.v10_12)
     ],
     products: [
         .library(
-            name: "Web3",
+            name: "MagicSDK_Web3",
             targets: ["Web3"]),
         .library(
             name: "Web3PromiseKit",
@@ -34,7 +34,7 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "Web3",
+            name: "MagicSDK_Web3",
             dependencies: [
                 .product(name: "BigInt", package: "BigInt"),
                 .product(name: "CryptoSwift", package: "CryptoSwift"),
@@ -45,7 +45,7 @@ let package = Package(
         .target(
             name: "Web3PromiseKit",
             dependencies: [
-                .target(name: "Web3"),
+                .target(name: "MagicSDK_Web3"),
                 .product(name: "PromiseKit", package: "PromiseKit"),
             ],
             path: "Sources",
@@ -53,7 +53,7 @@ let package = Package(
         .target(
             name: "Web3ContractABI",
             dependencies: [
-                .target(name: "Web3"),
+                .target(name: "MagicSDK_Web3"),
                 .product(name: "BigInt", package: "BigInt"),
                 .product(name: "CryptoSwift", package: "CryptoSwift"),
             ],

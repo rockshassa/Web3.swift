@@ -63,7 +63,7 @@ public extension EthereumValue {
 
 // MARK: - BytesConvertible
 
-extension EthereumQuantity: BytesConvertible {
+extension EthereumQuantity: Web3BytesConvertible {
 
     public init(_ bytes: Bytes) {
         self = EthereumQuantity.bytes(bytes)

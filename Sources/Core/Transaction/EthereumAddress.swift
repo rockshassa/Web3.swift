@@ -200,7 +200,7 @@ extension EthereumAddress: Equatable {
 
 // MARK: - BytesConvertible
 
-extension EthereumAddress: BytesConvertible {
+extension EthereumAddress: Web3BytesConvertible {
 
     public init(_ bytes: Bytes) throws {
         try self.init(rawAddress: bytes)
