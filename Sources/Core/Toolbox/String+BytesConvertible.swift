@@ -19,10 +19,11 @@ extension String: Web3BytesConvertible {
 
     /**
      * Initializes a string with the given UTF8 represented byte array
-     */
+    
     public init(_ bytes: Bytes) {
         self = bytes.makeString()
     }
+     */
 }
 
 
